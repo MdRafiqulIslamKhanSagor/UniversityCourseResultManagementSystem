@@ -29,5 +29,30 @@ namespace UniversityCourseResultManagementSystem.Controllers
             }
             return View();
         }
+
+        public JsonResult IsCodeExits(string departmentCode)
+        {
+            var dept = Db.Departments.ToList();
+            if (!dept.Any(x => x.DepartmentCode.ToLower() == departmentCode.ToLower()))
+            {
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                return Json(false, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+        public ActionResult ShowAllDepartment()
+        {
+            var dept = Db.Departments.ToList();
+            return View(dept);
+        }
+
+        public ActionResult ViewDetails()
+        {
+            ViewBag.DepartmentIds = new SelectList(Db.Departments, "DepartmentId", "DepartmentCode");
+            return View();
+        }
     }
 }

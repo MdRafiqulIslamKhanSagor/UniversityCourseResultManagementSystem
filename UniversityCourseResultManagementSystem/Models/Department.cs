@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace UniversityCourseResultManagementSystem.Models
 {
@@ -17,6 +18,7 @@ namespace UniversityCourseResultManagementSystem.Models
         [StringLength(7,MinimumLength = 2,ErrorMessage = "Code Must be 2-7 Character")]
         [Column(TypeName = "Varchar")]
         [Display(Name = "Department Code")]
+        [Remote("IsCodeExits", "Department", ErrorMessage = "Department code already exits")]
         public string DepartmentCode { get; set; }
         [Required(ErrorMessage = "Please Enter a Department Name")]
         [Column(TypeName = "Varchar")]

@@ -151,6 +151,10 @@
     <Compile Include="Migrations\201912160511228_Vershion4.designer.cs">
       <DependentUpon>201912160511228_Vershion4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912161717541_vershion5.cs" />
+    <Compile Include="Migrations\201912161717541_vershion5.designer.cs">
+      <DependentUpon>201912161717541_vershion5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\ProjectDBContext.cs" />
@@ -193,6 +197,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Department\SaveDepartment.cshtml" />
+    <Content Include="Views\Department\ShowAllDepartment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -222,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912160511228_Vershion4.resx">
       <DependentUpon>201912160511228_Vershion4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912161717541_vershion5.resx">
+      <DependentUpon>201912161717541_vershion5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
