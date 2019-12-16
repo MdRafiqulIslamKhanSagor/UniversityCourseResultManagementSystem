@@ -16,10 +16,12 @@ namespace UniversityCourseResultManagementSystem.Models
         [Required(ErrorMessage = "Please Enter Department Code")]
         [StringLength(7,MinimumLength = 2,ErrorMessage = "Code Must be 2-7 Character")]
         [Column(TypeName = "Varchar")]
+        [Display(Name = "Department Code")]
         public string DepartmentCode { get; set; }
         [Required(ErrorMessage = "Please Enter a Department Name")]
         [Column(TypeName = "Varchar")]
         [StringLength(50)]
+        [Display(Name = "Department Name")]
         public string DepartmentName { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(20)]

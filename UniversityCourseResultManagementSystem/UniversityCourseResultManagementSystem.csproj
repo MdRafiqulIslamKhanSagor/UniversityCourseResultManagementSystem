@@ -109,6 +109,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Vereyon.Web.FlashMessage, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vereyon.Web.FlashMessage.1.1.0\lib\net40\Vereyon.Web.FlashMessage.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -127,6 +130,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -142,6 +146,10 @@
     <Compile Include="Migrations\201912091858161_Vershion3 .cs" />
     <Compile Include="Migrations\201912091858161_Vershion3 .designer.cs">
       <DependentUpon>201912091858161_Vershion3 .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912160511228_Vershion4.cs" />
+    <Compile Include="Migrations\201912160511228_Vershion4.designer.cs">
+      <DependentUpon>201912160511228_Vershion4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Department.cs" />
@@ -184,6 +192,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Department\SaveDepartment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -210,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912091858161_Vershion3 .resx">
       <DependentUpon>201912091858161_Vershion3 .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912160511228_Vershion4.resx">
+      <DependentUpon>201912160511228_Vershion4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
