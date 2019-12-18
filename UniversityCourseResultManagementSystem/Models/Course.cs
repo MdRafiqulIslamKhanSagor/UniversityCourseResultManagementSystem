@@ -30,7 +30,7 @@ namespace UniversityCourseResultManagementSystem.Models
 
         public int DepartmentId { get; set; }
 
-        [Required(ErrorMessage = "Please Select Department Name")]
+        [Required(ErrorMessage = "Please Select Semester Name")]
 
         public int SemesterId { get; set; }
 

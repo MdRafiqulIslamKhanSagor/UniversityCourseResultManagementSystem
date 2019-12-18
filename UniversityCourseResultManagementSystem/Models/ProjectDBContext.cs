@@ -9,6 +9,8 @@ namespace UniversityCourseResultManagementSystem.Models
     public class ProjectDBContext:DbContext
     {
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Semister> Semisters { get; set; }
 
     }
 }
