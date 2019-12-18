@@ -12,5 +12,8 @@ namespace UniversityCourseResultManagementSystem.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<Semister> Semisters { get; set; }
 
+        public System.Data.Entity.DbSet<UniversityCourseResultManagementSystem.Models.Teacher> Teachers { get; set; }
+
+        public System.Data.Entity.DbSet<UniversityCourseResultManagementSystem.Models.Designation> Designations { get; set; }
     }
 }

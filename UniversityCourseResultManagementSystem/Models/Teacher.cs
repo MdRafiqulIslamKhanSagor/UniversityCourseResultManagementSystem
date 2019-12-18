@@ -22,7 +22,7 @@ namespace UniversityCourseResultManagementSystem.Models
         [Required(ErrorMessage = "Please Give the  Email")]
 
         [DataType(DataType.EmailAddress)]
-        [Remote("IsEmailExist", "Teacher", ErrorMessage = "Email already exist")]
+        [Remote("IsEmailExist", "Teachers", ErrorMessage = "Email already exist")]
         public string TeacherEmail { get; set; }
         [Required(ErrorMessage = "Please Give the Contact No")]
         [Column(TypeName = "Varchar")]
