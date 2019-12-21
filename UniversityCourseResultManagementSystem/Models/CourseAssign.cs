@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +8,7 @@ using System.Web;
 
 namespace UniversityCourseResultManagementSystem.Models
 {
-    public class CourseAssign
+    public class CourseAssign : IEnumerable
     {
         [Key]
         public int CourseAssignId { get; set; }
@@ -25,5 +26,9 @@ namespace UniversityCourseResultManagementSystem.Models
         public virtual Department Department { get; set; }
         public virtual Teacher Teacher { get; set; }
         public virtual Course Course { get; set; }
+        public IEnumerator GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
