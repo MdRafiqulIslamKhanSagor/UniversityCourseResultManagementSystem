@@ -130,6 +130,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CourseAssignController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -137,37 +138,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201912091844434_Version1.cs" />
-    <Compile Include="Migrations\201912091844434_Version1.designer.cs">
-      <DependentUpon>201912091844434_Version1.cs</DependentUpon>
+    <Compile Include="Migrations\201912201807588_sagor.cs" />
+    <Compile Include="Migrations\201912201807588_sagor.designer.cs">
+      <DependentUpon>201912201807588_sagor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201912091851239_Vershion 2.cs" />
-    <Compile Include="Migrations\201912091851239_Vershion 2.designer.cs">
-      <DependentUpon>201912091851239_Vershion 2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912091858161_Vershion3 .cs" />
-    <Compile Include="Migrations\201912091858161_Vershion3 .designer.cs">
-      <DependentUpon>201912091858161_Vershion3 .cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912160511228_Vershion4.cs" />
-    <Compile Include="Migrations\201912160511228_Vershion4.designer.cs">
-      <DependentUpon>201912160511228_Vershion4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912161717541_vershion5.cs" />
-    <Compile Include="Migrations\201912161717541_vershion5.designer.cs">
-      <DependentUpon>201912161717541_vershion5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912181925096_Vershion 6.cs" />
-    <Compile Include="Migrations\201912181925096_Vershion 6.designer.cs">
-      <DependentUpon>201912181925096_Vershion 6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912181952593_Vershion 7.cs" />
-    <Compile Include="Migrations\201912181952593_Vershion 7.designer.cs">
-      <DependentUpon>201912181952593_Vershion 7.cs</DependentUpon>
+    <Compile Include="Migrations\201912201841513_V1.cs" />
+    <Compile Include="Migrations\201912201841513_V1.designer.cs">
+      <DependentUpon>201912201841513_V1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
-    <Compile Include="Models\CourseAssignToTeacher.cs" />
+    <Compile Include="Models\CourseAssign.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Designation.cs" />
     <Compile Include="Models\ProjectDBContext.cs" />
@@ -223,6 +204,9 @@
     <Content Include="Views\Teachers\Details.cshtml" />
     <Content Include="Views\Teachers\Edit.cshtml" />
     <Content Include="Views\Teachers\Index.cshtml" />
+    <Content Include="Views\CourseAssign\Index.cshtml" />
+    <Content Include="Views\CourseAssign\CourseAssignToTeacher.cshtml" />
+    <Content Include="Views\CourseAssign\CreateCourseStaticsByDeptId.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -241,26 +225,11 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201912091844434_Version1.resx">
-      <DependentUpon>201912091844434_Version1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912201807588_sagor.resx">
+      <DependentUpon>201912201807588_sagor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912091851239_Vershion 2.resx">
-      <DependentUpon>201912091851239_Vershion 2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912091858161_Vershion3 .resx">
-      <DependentUpon>201912091858161_Vershion3 .cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912160511228_Vershion4.resx">
-      <DependentUpon>201912160511228_Vershion4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912161717541_vershion5.resx">
-      <DependentUpon>201912161717541_vershion5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912181925096_Vershion 6.resx">
-      <DependentUpon>201912181925096_Vershion 6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912181952593_Vershion 7.resx">
-      <DependentUpon>201912181952593_Vershion 7.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912201841513_V1.resx">
+      <DependentUpon>201912201841513_V1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

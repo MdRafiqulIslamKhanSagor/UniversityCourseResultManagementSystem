@@ -7,13 +7,13 @@ namespace UniversityCourseResultManagementSystem.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class Vershion2 : IMigrationMetadata
+    public sealed partial class sagor : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Vershion2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(sagor));
         
         string IMigrationMetadata.Id
         {
-            get { return "201912091851239_Vershion 2"; }
+            get { return "201912201807588_sagor"; }
         }
         
         string IMigrationMetadata.Source

@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using UniversityCourseResultManagementSystem.Models;
-
-namespace UniversityCourseResultManagementSystem.Migrations
+﻿namespace UniversityCourseResultManagementSystem.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -17,17 +14,10 @@ namespace UniversityCourseResultManagementSystem.Migrations
 
         protected override void Seed(UniversityCourseResultManagementSystem.Models.ProjectDBContext context)
         {
-            if (!context.Semisters.Any())
-            {
-                var semisters = new List<Semister>
-                {
-                    new Semister { SemesterName = "Afghanistan" },
-                    new Semister { SemesterName = "Albania" }
-                   
-                };
-               
-                context.SaveChanges();
-            }
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
+            //  to avoid creating duplicate seed data.
         }
     }
 }

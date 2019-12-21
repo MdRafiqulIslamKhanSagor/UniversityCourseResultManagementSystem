@@ -30,13 +30,13 @@ namespace UniversityCourseResultManagementSystem.Models
 
         public int DepartmentId { get; set; }
 
-        [Required(ErrorMessage = "Please Select Semester Name")]
+        [Required(ErrorMessage = "Please Select Department Name")]
 
         public int SemesterId { get; set; }
-
-
+        public int? TeacherId { get; set; }
         public virtual Department Department { get; set; }
 
         public virtual Semister Semester { get; set; }
+        public virtual Teacher Teacher { get; set; }
     }
 }

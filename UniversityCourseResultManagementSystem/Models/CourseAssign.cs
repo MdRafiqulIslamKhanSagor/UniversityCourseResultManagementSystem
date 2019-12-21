@@ -7,7 +7,7 @@ using System.Web;
 
 namespace UniversityCourseResultManagementSystem.Models
 {
-    public class CourseAssignToTeacher
+    public class CourseAssign
     {
         [Key]
         public int CourseAssignId { get; set; }
